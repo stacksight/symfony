@@ -2,12 +2,6 @@
 
 namespace AppBundle\Stacksight;
 
-//use Symfony\Component\HttpKernel\Event\GetResponseEvent;
-//use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
-//use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
-//use Symfony\Component\HttpKernel\KernelEvents;
-//use Symfony\Component\HttpFoundation\RequestMatcherInterface;
-//use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface as Container;
 
 class Stacksight
@@ -54,34 +48,12 @@ class Stacksight
             require_once('src/sdk/bootstrap-symfony-2.php');
             $stacksight = new \SymfonyBootstrap();
             $this->_ss_client = $stacksight->getClient();
+        } else{
+            $this->_ss_client = $ss_client;
         }
     }
 
     public function getClient(){
         return $this->_ss_client;
     }
-
-//    /**
-//     * Handles the onKernelException event.
-//     *
-//     * @param GetResponseForExceptionEvent $event A GetResponseForExceptionEvent instance
-//     */
-//    public function onKernelException(GetResponseForExceptionEvent $event)
-//    {
-//        if ($this->onlyMasterRequests && !$event->isMasterRequest()) {
-//            return;
-//        }
-//
-//        $this->exception = $event->getException();
-//    }
-//
-//    /**
-//     * @deprecated since version 2.4, to be removed in 3.0.
-//     */
-//    public function onKernelRequest(GetResponseEvent $event)
-//    {
-//        if (null === $this->requestStack) {
-//            $this->requests[] = $event->getRequest();
-//        }
-//    }
 }
