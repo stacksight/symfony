@@ -27,4 +27,8 @@ require-dev: {
 symfony/phpunit-bridge: "~2.7",
 symfony/debug: "~2.7"
 },
+"extra": {
+        "branch-alias": {
+            "dev-master": "1.01-dev"
+        }
 }
