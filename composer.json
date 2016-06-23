@@ -1,34 +1,36 @@
 {
-name: "stacksight/stacksight",
-type: "library",
-description: "Stacksigh - Operational Insights for opensource applications", 
-keywords: [
-"stacsight"
-],
-homepage: "http://twig.sensiolabs.org",
-license: "mit",
-authors: [
-{
-name: "Lior Kesos",
-email: "lior@linovate.net",
-homepage: "http://stacksight.io",
-role: "Chief hand waver"
-},
-{
-name: "Igor",
-email: "igor@linovate.net",
-role: Developer""
-}
-],
-require: {
-php: ">=5.2.7"
-},
-require-dev: {
-symfony/phpunit-bridge: "~2.7",
-symfony/debug: "~2.7"
-},
-"extra": {
-        "branch-alias": {
-            "dev-master": "1.01-dev"
+    "name": "stacksight/symfony",
+    "description": "Stacksigh - Operational Insights for opensource applications", 
+    "keywords": ["stacksight"],
+    "license": "MIT",
+    "authors": [
+		{
+			"name": "Lior Kesos",
+			"email": "lior@linovate.net",
+			"homepage": "http://stacksight.io",
+			"role": "Chief hand waver"
+		},
+		{
+			"name": "Igor",
+			"email": "igor@linovate.net",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.2.7"
+	},
+	"require-dev": {
+		"symfony/phpunit-bridge": "~2.7",
+		"symfony/debug": "~2.7"
+	},
+	"extra": {
+	    "branch-alias": {
+	        "dev-master": "1.01-dev"
+	    }
+	},
+    "autoload": {
+        "psr-0": {
+            "Linnovate\\Stacksight\\": ""
         }
+    }
 }
