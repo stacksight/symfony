@@ -1,8 +1,8 @@
 <?php
 
-namespace AppBundle\Stacksight;
+namespace Linnovate\Stacksight;
 
-use AppBundle\Stacksight\Stacksight;
+use Linnovate\Stacksight\Stacksight;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
 

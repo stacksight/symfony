@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Stacksight;
+namespace Linnovate\Stacksight;
 
 use Symfony\Component\DependencyInjection\ContainerInterface as Container;
 
@@ -40,6 +40,13 @@ class Stacksight
             $include_logs = $container->getParameter('stacksight.logs');
             if(!defined('STACKSIGHT_INCLUDE_LOGS') && $include_logs){
                 define('STACKSIGHT_INCLUDE_LOGS', $include_logs);
+            }
+        }
+
+        if($container->hasParameter('stacksight.debug')){
+            $debug = $container->getParameter('stacksight.debug');
+            if(!defined('STACKSIGHT_DEBUG') && $debug){
+                define('STACKSIGHT_DEBUG', (bool) $debug);
             }
         }
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace AppBundle\Stacksight\EventListener;
+namespace Linnovate\Stacksight\EventListener;
 
-use AppBundle\Stacksight\Stacksight;
+use Linnovate\Stacksight\Stacksight;
 use Doctrine\Common\EventSubscriber;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 
