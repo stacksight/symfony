@@ -1,12 +1,12 @@
 <?php
 
-namespace AppBundle\Stacksight\EntityEvents;
+namespace Linnovate\Stacksight\EntityEvents;
 
-use AppBundle\Stacksight\EntityEvents\interfaces\StackSightEntityEventInterface;
+use Linnovate\Stacksight\EntityEvents\interfaces\StackSightEntityEventInterface;
 
-class StacksightUserEntityEvent  implements StackSightEntityEventInterface
+class StacksightCommentEntityEvent  implements StackSightEntityEventInterface
 {
-    const TARGET_ENTITY = 'AppBundle\Entity\User';
+    const TARGET_ENTITY = 'AppBundle\Entity\Comment';
 
     public function sendEvent($stacksight, $router, $type, $object){
         print_r($type);

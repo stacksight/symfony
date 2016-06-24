@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Stacksight\EntityEvents\interfaces;
+namespace Linnovate\Stacksight\EntityEvents\interfaces;
 
 interface StackSightEntityEventInterface{
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace AppBundle\Stacksight;
+namespace Linnovate\Stacksight;
 
-use AppBundle\Stacksight\Stacksight;
+use Linnovate\Stacksight\Stacksight;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 
 class StacksightDoctrineEvents
@@ -19,9 +19,5 @@ class StacksightDoctrineEvents
     {
         $entity = $args->getEntity();
         $em = $args->getEntityManager();
-        print_r($args);
-//        print_r($entity);
-//        print_r($em);
-        die();
     }
 }

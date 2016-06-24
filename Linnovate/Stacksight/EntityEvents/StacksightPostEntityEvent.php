@@ -1,9 +1,9 @@
 <?php
 
-namespace AppBundle\Stacksight\EntityEvents;
+namespace Linnovate\Stacksight\EntityEvents;
 
-use AppBundle\Stacksight\EntityEvents\interfaces\StackSightEntityEventInterface;
-use AppBundle\Stacksight\EventListener\StacksightDoctrineSubscriber;
+use Linnovate\Stacksight\EntityEvents\interfaces\StackSightEntityEventInterface;
+use Linnovate\Stacksight\EventListener\StacksightDoctrineSubscriber;
 
 class StacksightPostEntityEvent implements StackSightEntityEventInterface
 {

@@ -1,7 +1,7 @@
 <?php
-namespace AppBundle\Stacksight;
+namespace Linnovate\Stacksight;
 
-use AppBundle\Stacksight\Stacksight;
+use Linnovate\Stacksight\Stacksight;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 use Symfony\Component\Security\Core\Authorization\AuthorizationChecker;
 use Symfony\Component\HttpFoundation\Session\Session;
